@@ -7,7 +7,8 @@ dotnet aspnet-codegenerator controller -name EmployeeController -m Employee -dc 
 dotnet aspnet-codegenerator controller -name InsuranceCaseController -m InsuranceCase -dc AppDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
 dotnet aspnet-codegenerator controller -name PayoutController -m Payout -dc AppDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries
 
-dotnet tool install --global dotnet-aspnet-codegenerator
+dotnet tool install --global dotnet-ef --version 8.0.0
+dotnet tool install --global dotnet-aspnet-codegenerator --version 8.0.0
 
 dotnet add package Pomelo.EntityFrameworkCore.MySql --version 8.0.0
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design --version 8.0.0
